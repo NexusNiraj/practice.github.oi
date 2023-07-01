@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background: url(./images/developer.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text {
+  color: white;
+  line-height: 40px;
+  font-size: 25px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.text h2 {
+  font-size: 40px;
+}
+.text span {
+  font-size: 20px;
+}
+.mid_text {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+.mid_text span {
+  font-size: 25px;
+}
+.work {
+  display: grid;
+  max-width: 1000px;
+  margin: 50px auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.work_content {
+  display: flex;
+}
+
+.web,
+.app,
+.ui {
+  margin: 20px;
+  max-width: 320px;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 15px 10px 20px gray;
+  transition: 0.5s ease-in;
+}
+.web:hover,
+.app:hover,
+.ui:hover {
+  transform: scale(1.12);
+  transition: 0.3s ease-out;
+}
+
+.web_text,
+.app_text,
+.ui_text {
+  padding: 10px;
+  line-height: 20px;
+  margin: 10px;
+}
+
+.web_text p,
+.app_text p,
+.ui_text p {
+  padding: 10px;
+  line-height: 20px;
+}
+
+.bottom_content {
+  max-width: 100%;
+  display: flex;
+  gap: 0px;
+}
+.contact {
+  background-color: rgb(43, 235, 43);
+  min-width: 50%;
+}
+.about {
+  background-color: rgb(172, 22, 22);
+}
+.contact h4,
+.about h4 {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.contact p,
+.about p {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.footer {
+  background-color: black;
+  max-width: 100%;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+@media (max-width: 414px) {
+  .top {
+    min-height: 1vh;
+  }
+  .text {
+    line-height: 20px;
+    font-size: 10px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+  .text h2 {
+    font-size: 30px;
+  }
+  .text span {
+    font-size: 15px;
+  }
+  .work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
